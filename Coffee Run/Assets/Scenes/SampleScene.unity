@@ -663,6 +663,7 @@ GameObject:
   - component: {fileID: 577387268}
   - component: {fileID: 577387270}
   - component: {fileID: 577387269}
+  - component: {fileID: 577387271}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -854,6 +855,19 @@ MonoBehaviour:
   dialogueText: {fileID: 254341122}
   nameText: {fileID: 64812122}
   dialoguePanel: {fileID: 1140802179}
+--- !u!114 &577387271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577387263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9004012372074e33bc74112603a353f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 577387263}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -10520,7 +10534,7 @@ GameObject:
   - component: {fileID: 650581398}
   - component: {fileID: 650581401}
   m_Layer: 0
-  m_Name: Light 2D
+  m_Name: Warehouse SpotLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14176,7 +14190,7 @@ GameObject:
   - component: {fileID: 1126274633}
   - component: {fileID: 1126274632}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: CarSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14448,6 +14462,7 @@ GameObject:
   - component: {fileID: 1180584040}
   - component: {fileID: 1180584042}
   - component: {fileID: 1180584039}
+  - component: {fileID: 1180584043}
   m_Layer: 6
   m_Name: Keys
   m_TagString: Untagged
@@ -14577,6 +14592,20 @@ MonoBehaviour:
   repeatStartPosition: 0
   npcName: 
   dialogueAsset: {fileID: 11400000, guid: 3404f9e7310054e178d64e421b07e7b7, type: 2}
+--- !u!114 &1180584043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180584038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76183ff2ffc98475ea6ffa4c7c96b674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 1180584038}
+  inventory: {fileID: 577387271}
 --- !u!1 &1297402026
 GameObject:
   m_ObjectHideFlags: 0
@@ -19377,7 +19406,7 @@ GameObject:
   - component: {fileID: 1685062313}
   - component: {fileID: 1685062312}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: CarSpawner2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19503,13 +19532,13 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
+  - {fileID: 650581400}
   - {fileID: 577387265}
   - {fileID: 1960071720}
   - {fileID: 1126274633}
+  - {fileID: 1685062313}
   - {fileID: 1297402029}
   - {fileID: 1167527970}
-  - {fileID: 1685062313}
   - {fileID: 538922758}
   - {fileID: 1363617454}
   - {fileID: 1180584041}
-  - {fileID: 650581400}
