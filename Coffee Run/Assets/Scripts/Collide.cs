@@ -1,15 +1,8 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class Collide : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-
-    public static GameManager Instance {get; private set;}
-
-    public void PlayerDies(){
-        SceneManager.LoadScene(0);
-    }
     void Start()
     {
         
@@ -18,6 +11,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        GameManager.Instance.PlayerDies();
         
     }
 }

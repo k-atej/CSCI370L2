@@ -14,6 +14,16 @@ public class Car : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
 
     }
+
+    // can't get collision to work
+    /*
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        GameManager.Instance.PlayerDies();
+        
+    }
+    */
 }

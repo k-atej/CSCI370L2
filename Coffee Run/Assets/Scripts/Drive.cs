@@ -3,7 +3,7 @@ using UnityEngine;
 public class Drive : MonoBehaviour
 {
 
-    private Rigidbody2D rigidbody2D;
+    private new Rigidbody2D rigidbody2D;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
