@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI dialogueText;
     [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] GameObject dialoguePanel;
+    
 
     public static event Action OnDialogueStarted;
     public static event Action OnDialogueEnded;
@@ -113,7 +114,7 @@ IEnumerator TypeTextUncapped(string line)
     }
     void Start()
     {
-        
+        dialoguePanel.SetActive(false);
     }
 
     // Update is called once per frame

@@ -14440,7 +14440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstInteraction: 0
   repeatStartPosition: 0
-  npcName: Keys
+  npcName: 
   dialogueAsset: {fileID: 11400000, guid: 3404f9e7310054e178d64e421b07e7b7, type: 2}
 --- !u!1 &1297402026
 GameObject:
