@@ -9179,7 +9179,7 @@ GameObject:
   - component: {fileID: 1167527969}
   - component: {fileID: 1167527968}
   - component: {fileID: 1167527971}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Coffee Shop Owner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
