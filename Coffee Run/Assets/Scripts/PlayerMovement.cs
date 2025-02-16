@@ -36,4 +36,17 @@ public class PlayerMovement : MonoBehaviour
         rigidbody2D.linearVelocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
 
+
+    /*
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.name == "Car" || col.gameObject.name == "Car(Clone)" || col.gameObject.name == "Car2" ||col.gameObject.name == "Car2(Clone)")
+        {
+            GameManager.Instance.PlayerDies();
+        }
+        
+    }
+    */
+
 }

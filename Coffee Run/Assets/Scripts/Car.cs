@@ -3,27 +3,32 @@ using UnityEngine;
 public class Car : MonoBehaviour
 {
 
-    private Rigidbody2D rb2d;
+    public GameObject car;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(car.transform.position.x <= -11 || car.transform.position.x >= 10){
+            Destroy(car);
+        }
 
     }
 
-    // can't get collision to work
+    
+
     /*
     void OnCollisionEnter2D(Collision2D col)
     {
-        GameManager.Instance.PlayerDies();
+        if (col.gameObject.name != "Player")
+        {
+            Destroy(col.gameObject);
+        }
         
-    }
-    */
+    }*/
+    
 }

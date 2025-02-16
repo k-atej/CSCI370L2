@@ -15,7 +15,10 @@ public class Collide : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
-        GameManager.Instance.PlayerDies();
+        if (col.gameObject.name != "Player")
+        {
+            Destroy(col.gameObject);
+        }
         
     }
 }
