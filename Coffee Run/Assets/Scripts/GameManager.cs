@@ -7,21 +7,16 @@ public class GameManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    
-    void Awake()
-        {
-            if (Instance == null)
-            {
-                Instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
-        }
-
     public static GameManager Instance { get; private set; }
+    void Awake() {
+        if(Instance != null)
+            Destroy(Instance);
+        else
+            Instance = this;
+        DontDestroyOnLoad(this);
+    }
+
+    
    
 
     [SerializeField] TextMeshProUGUI dialogueText;
@@ -61,6 +56,8 @@ public void StartDialogue(string[] dialogue, int startPosition, string name)
 
         OnDialogueEnded?.Invoke();
         dialoguePanel.SetActive(false);
+        dialogueText.text = null;
+        nameText.text = null;
     }
 
     public void SkipLine()
