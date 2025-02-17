@@ -10,14 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0b482648aef8c4489f1b658dd4e770d, type: 3}
-  m_Name: StartingDialogue
+  m_Name: Milly
   m_EditorClassIdentifier: 
   dialogue:
-  - Hmmm....Something seems weird...
-  - 'I should check on Milly in the city
-
-
-'
-  - '
-
-'
+  - Oh...hey
+  - '*Silence*'
