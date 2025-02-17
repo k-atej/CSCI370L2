@@ -190,3 +190,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   car: {fileID: 4742198442274122282}
+  boundaryRight: 10
+  boundaryLeft: -11

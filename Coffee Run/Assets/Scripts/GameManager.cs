@@ -115,6 +115,7 @@ IEnumerator TypeTextUncapped(string line)
     void Start()
     {
         dialoguePanel.SetActive(false);
+        
     }
 
     // Update is called once per frame

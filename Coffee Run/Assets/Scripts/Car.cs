@@ -4,6 +4,8 @@ public class Car : MonoBehaviour
 {
 
     public GameObject car;
+    public int boundaryRight;
+    public int boundaryLeft;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,7 +15,7 @@ public class Car : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(car.transform.position.x <= -11 || car.transform.position.x >= 10){
+        if(car.transform.position.x <= boundaryLeft || car.transform.position.x >= boundaryRight){
             Destroy(car);
         }
 
