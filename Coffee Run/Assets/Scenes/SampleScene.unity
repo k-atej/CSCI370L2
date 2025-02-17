@@ -868,6 +868,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 577387263}
+  dialogueText: {fileID: 254341122}
+  nameText: {fileID: 64812122}
+  dialoguePanel: {fileID: 1140802179}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
