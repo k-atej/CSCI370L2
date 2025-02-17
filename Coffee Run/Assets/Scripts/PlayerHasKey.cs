@@ -33,8 +33,9 @@ public class PlayerHasKeys : MonoBehaviour
             Destroy(ownerBody);
             shop.ChangeDialogue(shopDialogue);
             shop.repeatStartPosition = 0;
+            GameManager.Instance.shopIsOpen = true;
             Debug.Log("Owner Unlocked door");
-        }
-        
+
+        }        
     }
 }

@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     
    
-
+    public bool shopIsOpen = false;
     [SerializeField] TextMeshProUGUI dialogueText;
     [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] GameObject dialoguePanel;

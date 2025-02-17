@@ -5,6 +5,7 @@ public class PickUp : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     public GameObject obj;
+    public int endingLayer;
     public Inventory inventory;
     void Start()
     {
@@ -20,8 +21,18 @@ public class PickUp : MonoBehaviour
     }
 
     void Interact() {
+        if(obj.name == "Coffee"){
+        if(GameManager.Instance.shopIsOpen){
+            inventory.AddItem(obj.name);
+            Renderer myRenderer = GetComponent<Renderer>();
+            myRenderer.sortingOrder = endingLayer;
+        }
+        }
+        else{
         inventory.AddItem(obj.name);
-        Destroy(obj);
+        Renderer myRenderer = GetComponent<Renderer>();
+        myRenderer.sortingOrder = endingLayer;
+        }
     }
 
 }
