@@ -3,7 +3,7 @@ using UnityEngine;
 public class NPC : MonoBehaviour
 {
     [SerializeField] bool firstInteraction = true;
-    [SerializeField] int repeatStartPosition;
+    public int repeatStartPosition;
 
     public string npcName;
     public DialogueAsset dialogueAsset;

@@ -1,19 +1,19 @@
 using UnityEngine;
 
-public class ShopOwnerLeaves : MonoBehaviour
+public class PlayerHasKeys : MonoBehaviour
 {
 
     public DialogueAsset ownerDialogue;
     public DialogueAsset shopDialogue;
-   // public GameObject player;
 
-    //public GameObject shopOwnerBody;
+    public GameObject ownerBody;
 
-   // public GameObject shopBody;
     public Inventory inventory;
 
     public NPC shopOwner;
     public NPC shop;
+
+    public Inventory ownerInv;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,9 +24,16 @@ public class ShopOwnerLeaves : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(inventory.HasKey()){
+        if(inventory.HasItem("Keys")){
             shopOwner.ChangeDialogue(ownerDialogue);
+            shopOwner.repeatStartPosition = 1;
+            Debug.Log("Dialogue Updated");
+        }
+        if(ownerInv.HasItem("Keys")){
+            Destroy(ownerBody);
             shop.ChangeDialogue(shopDialogue);
+            shop.repeatStartPosition = 0;
+            Debug.Log("Owner Unlocked door");
         }
         
     }

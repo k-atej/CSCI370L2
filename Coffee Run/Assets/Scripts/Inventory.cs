@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine.InputSystem;
 using System.Linq;
+using System;
 
 
 public class Inventory : MonoBehaviour
@@ -67,8 +68,8 @@ public class Inventory : MonoBehaviour
         timer = true;
 
     }
-    public bool HasKey(){
-        if(inventory.Contains("Keys")){
+    public bool HasItem(String item){
+        if(inventory.Contains(item)){
             return true;
             }
         return false;

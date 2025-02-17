@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - You found retrieved the key for me? Thank you!!! I'll open up shop right away!
+  - '*Press R to give shop key*'

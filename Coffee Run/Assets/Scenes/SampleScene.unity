@@ -665,6 +665,7 @@ GameObject:
   - component: {fileID: 577387269}
   - component: {fileID: 577387271}
   - component: {fileID: 577387272}
+  - component: {fileID: 577387273}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -885,10 +886,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ownerDialogue: {fileID: 11400000, guid: 4c47a6255a0b3734ba0b82c2d656f1c3, type: 2}
-  shopDialogue: {fileID: 11400000, guid: 4c47a6255a0b3734ba0b82c2d656f1c3, type: 2}
+  shopDialogue: {fileID: 11400000, guid: 8966d2cc3e5c2c8428559eafd69a8596, type: 2}
+  ownerBody: {fileID: 1167527967}
   inventory: {fileID: 577387271}
   shopOwner: {fileID: 1167527968}
   shop: {fileID: 1297402027}
+  ownerInv: {fileID: 1167527972}
+--- !u!114 &577387273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577387263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8093583da2fb1904da9b6cc459e9a57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: Keys
+  inventory: {fileID: 577387271}
+  recipient: {fileID: 1167527968}
+  npcInv: {fileID: 1167527972}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -14332,6 +14351,7 @@ GameObject:
   - component: {fileID: 1167527969}
   - component: {fileID: 1167527968}
   - component: {fileID: 1167527971}
+  - component: {fileID: 1167527972}
   m_Layer: 6
   m_Name: Coffee Shop Owner
   m_TagString: Untagged
@@ -14471,6 +14491,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1167527972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167527967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9004012372074e33bc74112603a353f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameText: {fileID: 0}
+  dialoguePanel: {fileID: 0}
 --- !u!1 &1180584038
 GameObject:
   m_ObjectHideFlags: 0
