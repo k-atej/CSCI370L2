@@ -23,4 +23,8 @@ public class NPC : MonoBehaviour
             }
         }
     }
+    public void ChangeDialogue(DialogueAsset d){
+        dialogueAsset = d;
+    }
+
 }

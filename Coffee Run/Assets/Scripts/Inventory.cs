@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.InputSystem;
+using System.Linq;
 
 
 public class Inventory : MonoBehaviour
@@ -64,5 +66,11 @@ public class Inventory : MonoBehaviour
         dialoguePanel.SetActive(true);
         timer = true;
 
+    }
+    public bool HasKey(){
+        if(inventory.Contains("Keys")){
+            return true;
+            }
+        return false;
     }
 }
