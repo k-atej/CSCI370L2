@@ -4,12 +4,10 @@ using UnityEngine;
 public class Give : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject obj;
     public string item;
     public Inventory inventory;
 
-    public NPC recipient;
-
-    public Inventory npcInv;
     void Start()
     {
         
@@ -27,17 +25,29 @@ public class Give : MonoBehaviour
     }
 
     void Interact() {
-        if(recipient.name == "Coffee Shop Owner"){
-          item = "Keys";
-        }
-        else{
-           item = "Coffee";
-        }
-        if(inventory.HasItem(item)){
-        inventory.RemoveItem(item);
-        npcInv.AddItem(item);
-        Debug.Log("Item Tranferred");
-        }
+        Debug.Log("Looking for NPC");
+            RaycastHit2D hit = Physics2D.CircleCast(transform.position, 2, Vector2.up, 0, LayerMask.GetMask("NPC"));
+            if (hit)
+            {
+                Debug.Log("Hit Something!!" + hit.collider.gameObject.name);
+
+                if (hit.collider.gameObject.TryGetComponent(out NPC recipient))
+                {
+                    if(recipient.name == "Coffee Shop Owner"){
+                        item = "Keys";
+                    }
+                    else{
+                    item = "Coffee";
+                 }
+                    if(inventory.HasItem(item)){
+                    recipient.inv.AddItem(item);
+                    inventory.RemoveItem(item);
+                    Renderer myRenderer = obj.GetComponent<Renderer>();
+                    myRenderer.sortingOrder = 0;
+                    Debug.Log("Item Tranferred");
+                    }
+                }
+            }
     }
     
 }

@@ -5,6 +5,8 @@ public class NPC : MonoBehaviour
     [SerializeField] bool firstInteraction = true;
     public int repeatStartPosition;
 
+    public Inventory inv;
+
     public string npcName;
     public DialogueAsset dialogueAsset;
 

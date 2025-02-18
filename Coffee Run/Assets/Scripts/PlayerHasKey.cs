@@ -26,7 +26,7 @@ public class PlayerHasKeys : MonoBehaviour
     {
         if(inventory.HasItem("Keys")){
             shopOwner.ChangeDialogue(ownerDialogue);
-            shopOwner.repeatStartPosition = 1;
+            shopOwner.repeatStartPosition = 0;
             Debug.Log("Dialogue Updated");
         }
         if(ownerInv.HasItem("Keys")){
