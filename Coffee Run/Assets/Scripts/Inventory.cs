@@ -13,13 +13,13 @@ public class Inventory : MonoBehaviour
 
     List<string> inventory = new List<string>();
 
-    [SerializeField] TextMeshProUGUI dialogueText;
-    [SerializeField] TextMeshProUGUI nameText;
-    [SerializeField] GameObject dialoguePanel;
+    //SerializeField] TextMeshProUGUI dialogueText;
+    //[SerializeField] TextMeshProUGUI nameText;
+    //[SerializeField] GameObject dialoguePanel;
 
-    bool timer;
-    int clock = 0;
-    int delay = 150;
+    //bool timer;
+    //int clock = 0;
+//    int delay = 150;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,7 +31,7 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        /*if (Input.GetKeyDown(KeyCode.I))
         {
             CheckInventory();
             
@@ -46,7 +46,7 @@ public class Inventory : MonoBehaviour
                 nameText.text = "";
             }
 
-        }
+        }*/
     }
 
     public void AddItem(string itemName){
@@ -62,10 +62,10 @@ public class Inventory : MonoBehaviour
 
     public void CheckInventory(){
         string inv = string.Join( ",", inventory.ToArray() );
-        nameText.text = "Inventory:";
-        dialogueText.text = inv;
-        dialoguePanel.SetActive(true);
-        timer = true;
+        //nameText.text = "Inventory:";
+        //dialogueText.text = inv;
+        //dialoguePanel.SetActive(true);
+        //timer = true;
 
     }
     public bool HasItem(String item){
