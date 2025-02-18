@@ -108,14 +108,14 @@ IEnumerator TypeTextUncapped(string line)
 }
     // Start is called once before the first execution of Update 
 
-    public void PlayerDies(){
-        Destroy(gameObject);
-        SceneManager.LoadScene(0);
-    }
+   // public void PlayerDies(){
+    //    Destroy(gameObject);
+    //    SceneManager.LoadScene(0);
+   // }
     void Start()
     {
         dialoguePanel.SetActive(false);
-        
+
     }
 
     // Update is called once per frame

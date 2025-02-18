@@ -41,9 +41,9 @@ public class Give : MonoBehaviour
                  }
                     if(inventory.HasItem(item)){
                     recipient.inv.AddItem(item);
-                    inventory.RemoveItem(item);
-                    Renderer myRenderer = obj.GetComponent<Renderer>();
-                    myRenderer.sortingOrder = 0;
+                    //inventory.RemoveItem(item);
+                    //Renderer myRenderer = obj.GetComponent<Renderer>();
+                    //myRenderer.sortingOrder = 0;
                     Debug.Log("Item Tranferred");
                     }
                 }
