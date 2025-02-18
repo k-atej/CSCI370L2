@@ -8,7 +8,7 @@ public class PickUp : MonoBehaviour
     public int endingLayer;
     public Inventory inventory;
 
-    public ParticleSystem t;
+   // public ParticleSystem t;
     void Start()
     {
         
@@ -28,7 +28,7 @@ public class PickUp : MonoBehaviour
             inventory.AddItem(obj.name);
             Renderer myRenderer = GetComponent<Renderer>();
             myRenderer.sortingOrder = endingLayer;
-            t.Play();
+            //t.Play();
         }
         }
         else{
