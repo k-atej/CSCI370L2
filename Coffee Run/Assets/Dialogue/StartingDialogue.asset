@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: StartingDialogue
   m_EditorClassIdentifier: 
   dialogue:
+  - 'It''s so early.... It''s still dark outside...
+
+'
   - Hmmm....Something seems weird...
   - 'I should check on Milly in the city
 
-
-'
-  - '
 
 '

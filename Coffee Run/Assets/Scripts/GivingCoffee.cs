@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class GivingCoffee : MonoBehaviour
 {
@@ -12,19 +13,29 @@ public class GivingCoffee : MonoBehaviour
     public NPC npc;
 
 
+
+ 
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+   
     }
 
     // Update is called once per frame
     void Update()
     {
         if(inventory.HasItem("Coffee")){
-            npc.ChangeDialogue(npcDialogue);
-            npc.repeatStartPosition = 5;
-            Debug.Log("Caffinated");
+            if (!npc.checkCaffeinated()){
+                npc.ChangeDialogue(npcDialogue);
+                npc.repeatStartPosition = 5;
+                Debug.Log("Caffeinated");
+            }
+            else{
+                Debug.Log("Already caffeinated");
+            }
+            
         }   
     }
 }
