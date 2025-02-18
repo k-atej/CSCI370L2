@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 984b404f02e2b6a4e8a47e316f1e201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcDialogue: {fileID: 11400000, guid: 8966d2cc3e5c2c8428559eafd69a8596, type: 2}
+  npcDialogue: {fileID: 11400000, guid: 2575b7cfa7e554077a5260eaf2add3eb, type: 2}
   npcBody: {fileID: 33591748}
   inventory: {fileID: 45343706}
   npc: {fileID: 45343705}
@@ -485,8 +485,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 984b404f02e2b6a4e8a47e316f1e201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcDialogue: {fileID: 11400000, guid: 8966d2cc3e5c2c8428559eafd69a8596, type: 2}
-  npcBody: {fileID: 33591748}
+  npcDialogue: {fileID: 11400000, guid: 6f240701f779e4e1388afe6b763db459, type: 2}
+  npcBody: {fileID: 45343701}
   inventory: {fileID: 33591753}
   npc: {fileID: 33591752}
 --- !u!1 &64812120
@@ -804,7 +804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 984b404f02e2b6a4e8a47e316f1e201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcDialogue: {fileID: 11400000, guid: 8966d2cc3e5c2c8428559eafd69a8596, type: 2}
+  npcDialogue: {fileID: 11400000, guid: d1b23217c2f104cb085ba9bc1727ad88, type: 2}
   npcBody: {fileID: 94812831}
   inventory: {fileID: 94812833}
   npc: {fileID: 94812834}
@@ -987,7 +987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 984b404f02e2b6a4e8a47e316f1e201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcDialogue: {fileID: 11400000, guid: 8966d2cc3e5c2c8428559eafd69a8596, type: 2}
+  npcDialogue: {fileID: 11400000, guid: f5385e1dee01144178e6e9a99aea8bec, type: 2}
   npcBody: {fileID: 163097084}
   inventory: {fileID: 163097086}
   npc: {fileID: 163097087}
@@ -57387,7 +57387,6 @@ MonoBehaviour:
   obj: {fileID: 1180584038}
   endingLayer: 0
   inventory: {fileID: 577387271}
-  t: {fileID: 0}
 --- !u!1001 &1232625521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72267,7 +72266,6 @@ MonoBehaviour:
   obj: {fileID: 2005290908}
   endingLayer: 4
   inventory: {fileID: 577387271}
-  t: {fileID: 0}
 --- !u!1001 &8484526958254180667
 PrefabInstance:
   m_ObjectHideFlags: 0
