@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: GetCoffee
   m_EditorClassIdentifier: 
   dialogue:
-  - Press Q to pick up coffee
-  - In return for finding the keys, a worker gives you wayyyyyy to much coffee.
+  - Press Q to pick up coffee.
+  - In return for finding the keys, a worker gives you wayyyyyy too much coffee.
   - "You should share it with everyone. \n\nPress R to give coffee to others. "
