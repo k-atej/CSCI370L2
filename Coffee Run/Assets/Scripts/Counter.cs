@@ -26,6 +26,9 @@ public class Counter : MonoBehaviour
     void Update()
     {
         counterDisplay.SetText(getText());
+        if(counter == 0){
+            GameManager.Instance.allAreCaffienated = true;
+        }
     }
 
     private string getText(){
@@ -60,6 +63,7 @@ public class Counter : MonoBehaviour
         }
 
     }
+
 
 
 }

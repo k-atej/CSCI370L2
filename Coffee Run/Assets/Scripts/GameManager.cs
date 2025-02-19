@@ -16,12 +16,14 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-    
-   
+    //asks if player has started giving coffee or not
+    public bool started = false;
     public bool shopIsOpen = false;
+    public bool allAreCaffienated = false;
     [SerializeField] TextMeshProUGUI dialogueText;
     [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] GameObject dialoguePanel;
+
     
 
     public static event Action OnDialogueStarted;
@@ -121,6 +123,5 @@ IEnumerator TypeTextUncapped(string line)
     // Update is called once per frame
     void Update()
     {
-        
     }
 }

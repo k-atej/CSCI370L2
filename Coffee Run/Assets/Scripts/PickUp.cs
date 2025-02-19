@@ -31,6 +31,7 @@ public class PickUp : MonoBehaviour
             Renderer myRenderer = GetComponent<Renderer>();
             myRenderer.sortingOrder = endingLayer;
             t.Play();
+            GameManager.Instance.started = true;
         }
         }
         else{
