@@ -14,6 +14,8 @@ public class GivingCoffee : MonoBehaviour
 
     public NPC npc;
 
+    public AudioSource audioSource;
+
 
 
  
@@ -32,6 +34,7 @@ public class GivingCoffee : MonoBehaviour
             if (!npc.checkCaffeinated()){
                 npc.ChangeDialogue(npcDialogue);
                 npc.repeatStartPosition = 0;
+                audioSource.Play();
                 Debug.Log("Caffeinated");
             }
             else{

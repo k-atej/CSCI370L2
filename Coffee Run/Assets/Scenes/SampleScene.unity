@@ -303,6 +303,7 @@ MonoBehaviour:
   npcBody: {fileID: 33591748}
   inventory: {fileID: 45343706}
   npc: {fileID: 45343705}
+  audioSource: {fileID: 577387275}
 --- !u!1 &45343701
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +488,7 @@ MonoBehaviour:
   npcBody: {fileID: 45343701}
   inventory: {fileID: 33591753}
   npc: {fileID: 33591752}
+  audioSource: {fileID: 577387275}
 --- !u!1 &64812120
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +809,7 @@ MonoBehaviour:
   npcBody: {fileID: 94812831}
   inventory: {fileID: 94812833}
   npc: {fileID: 94812834}
+  audioSource: {fileID: 577387275}
 --- !u!1 &108249761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,6 +1247,7 @@ MonoBehaviour:
   npcBody: {fileID: 163097084}
   inventory: {fileID: 163097086}
   npc: {fileID: 163097087}
+  audioSource: {fileID: 577387275}
 --- !u!1 &206117192
 GameObject:
   m_ObjectHideFlags: 0
@@ -2229,6 +2233,7 @@ GameObject:
   - component: {fileID: 577387272}
   - component: {fileID: 577387274}
   - component: {fileID: 577387273}
+  - component: {fileID: 577387275}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -2495,6 +2500,103 @@ MonoBehaviour:
   neighbor: {fileID: 163097087}
   workerA: {fileID: 45343705}
   workerB: {fileID: 33591752}
+--- !u!82 &577387275
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577387263}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b90fd52c172de9349a4a80a73c9e7d0e, type: 3}
+  m_Resource: {fileID: 8300000, guid: b90fd52c172de9349a4a80a73c9e7d0e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -63198,6 +63300,7 @@ MonoBehaviour:
   npcBody: {fileID: 903534437}
   inventory: {fileID: 903534439}
   npc: {fileID: 903534440}
+  audioSource: {fileID: 577387275}
 --- !u!1001 &1047655724
 PrefabInstance:
   m_ObjectHideFlags: 0
