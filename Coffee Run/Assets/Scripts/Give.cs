@@ -45,6 +45,7 @@ public class Give : MonoBehaviour
                     //Renderer myRenderer = obj.GetComponent<Renderer>();
                     //myRenderer.sortingOrder = 0;
                     Debug.Log("Item Tranferred");
+                    
                     }
                 }
             }

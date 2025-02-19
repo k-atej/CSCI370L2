@@ -1,3 +1,5 @@
+using System;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -29,7 +31,7 @@ public class GivingCoffee : MonoBehaviour
         if(inventory.HasItem("Coffee")){
             if (!npc.checkCaffeinated()){
                 npc.ChangeDialogue(npcDialogue);
-                npc.repeatStartPosition = 5;
+                npc.repeatStartPosition = 0;
                 Debug.Log("Caffeinated");
             }
             else{
