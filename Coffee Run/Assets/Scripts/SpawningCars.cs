@@ -10,7 +10,7 @@ public class SpawningCars : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating("SpawnCar", 5.0f, 5.0f);
+        InvokeRepeating("SpawnCar", Random.Range(0f, 2.5f), Random.Range(2.5f, 5.5f));
     }
 
     // Update is called once per frame

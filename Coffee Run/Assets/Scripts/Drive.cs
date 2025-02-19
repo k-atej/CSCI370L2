@@ -13,10 +13,10 @@ public class Drive : MonoBehaviour
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         if(direction =="Left"){
-        rigidbody2D.AddForce(transform.right * -50);
+        rigidbody2D.AddForce(transform.right * -75);
         }
         else{
-        rigidbody2D.AddForce(transform.right * 50);
+        rigidbody2D.AddForce(transform.right * 75);
         }
     }
 

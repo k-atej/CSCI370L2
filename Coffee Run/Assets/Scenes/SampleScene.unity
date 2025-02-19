@@ -807,6 +807,51 @@ MonoBehaviour:
   npcBody: {fileID: 94812831}
   inventory: {fileID: 94812833}
   npc: {fileID: 94812834}
+--- !u!1 &108249761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 108249763}
+  - component: {fileID: 108249762}
+  m_Layer: 0
+  m_Name: CarSpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &108249762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108249761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007eb81637354554fbb81fece15ab998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car: {fileID: 4742198442274122282, guid: 7491c898e93b0c84f87cd9d1b655825a, type: 3}
+--- !u!4 &108249763
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108249761}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22.57, y: 19.33, z: -0.010868961}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &121252643
 GameObject:
   m_ObjectHideFlags: 0
@@ -2184,7 +2229,7 @@ GameObject:
   - component: {fileID: 577387272}
   - component: {fileID: 577387274}
   - component: {fileID: 577387273}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7454,7 +7499,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 30
-      m_TileSpriteIndex: 47
+      m_TileSpriteIndex: 61
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10654,7 +10699,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 37
-      m_TileSpriteIndex: 44
+      m_TileSpriteIndex: 47
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10744,7 +10789,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 35
-      m_TileSpriteIndex: 43
+      m_TileSpriteIndex: 44
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -11574,7 +11619,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 7
-      m_TileSpriteIndex: 37
+      m_TileSpriteIndex: 43
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -12494,7 +12539,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 10
-      m_TileSpriteIndex: 35
+      m_TileSpriteIndex: 37
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -14204,7 +14249,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 20
+      m_TileSpriteIndex: 35
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15224,7 +15269,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 20
-      m_TileSpriteIndex: 19
+      m_TileSpriteIndex: 20
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -28794,7 +28839,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 22
-      m_TileSpriteIndex: 18
+      m_TileSpriteIndex: 62
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -51635,12 +51680,12 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: -2779089278662059567, guid: 56007a479f89ea840991d6724bd74668, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -5773244093850934461, guid: 56007a479f89ea840991d6724bd74668, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 5825491608552330040, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -5766062063545882839, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 2
@@ -51670,11 +51715,11 @@ Tilemap:
   - m_RefCount: 6
     m_Data: {fileID: -1462512681, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -350039412, guid: 56007a479f89ea840991d6724bd74668, type: 3}
+    m_Data: {fileID: 5825491608552330040, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: 1002748227, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1482302362, guid: 56007a479f89ea840991d6724bd74668, type: 3}
+    m_Data: {fileID: -350039412, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 588258513, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 4
@@ -51686,15 +51731,15 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 574936158, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -976101311, guid: 56007a479f89ea840991d6724bd74668, type: 3}
+    m_Data: {fileID: -1482302362, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 358348018, guid: 56007a479f89ea840991d6724bd74668, type: 3}
+    m_Data: {fileID: -976101311, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 6766204184792930467, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 64
     m_Data: {fileID: -6825893594525092589, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 123630126, guid: 56007a479f89ea840991d6724bd74668, type: 3}
+    m_Data: {fileID: 358348018, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 39
     m_Data: {fileID: 1840162132, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 2
@@ -51721,10 +51766,10 @@ Tilemap:
     m_Data: {fileID: -732077696, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 28
     m_Data: {fileID: 8473425422973907432, guid: 56007a479f89ea840991d6724bd74668, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 123630126, guid: 56007a479f89ea840991d6724bd74668, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -2779089278662059567, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1676242932, guid: 56007a479f89ea840991d6724bd74668, type: 3}
   - m_RefCount: 1
@@ -51938,7 +51983,7 @@ GameObject:
   - component: {fileID: 635598982}
   - component: {fileID: 635598985}
   - component: {fileID: 635598984}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52138,7 +52183,7 @@ GameObject:
   - component: {fileID: 650580747}
   - component: {fileID: 650580749}
   - component: {fileID: 650580748}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62924,6 +62969,51 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &827074517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 827074519}
+  - component: {fileID: 827074518}
+  m_Layer: 0
+  m_Name: CarSpawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &827074518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827074517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007eb81637354554fbb81fece15ab998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car: {fileID: 4742198442274122282, guid: 7491c898e93b0c84f87cd9d1b655825a, type: 3}
+--- !u!4 &827074519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827074517}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22.68, y: 17.74, z: -0.010868961}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &903534437
 GameObject:
   m_ObjectHideFlags: 0
@@ -63221,7 +63311,7 @@ Transform:
   m_GameObject: {fileID: 1126274631}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.35, y: -3.71, z: -0.010868961}
+  m_LocalPosition: {x: -10.53, y: -5.13, z: -0.010868961}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -63544,6 +63634,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140802179}
   m_CullTransparentMesh: 1
+--- !u!1 &1153410822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1153410824}
+  - component: {fileID: 1153410823}
+  m_Layer: 0
+  m_Name: CarSpawner2 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1153410823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153410822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007eb81637354554fbb81fece15ab998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car: {fileID: 2734319183174814584, guid: 84f63d0ef891c804e954cae3be79a963, type: 3}
+--- !u!4 &1153410824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153410822}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.55, y: 23.3, z: 0.01559565}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1167527967
 GameObject:
   m_ObjectHideFlags: 0
@@ -63871,6 +64006,51 @@ MonoBehaviour:
   endingLayer: 0
   inventory: {fileID: 577387271}
   t: {fileID: 0}
+--- !u!1 &1194984256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1194984258}
+  - component: {fileID: 1194984257}
+  m_Layer: 0
+  m_Name: CarSpawner2 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1194984257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194984256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007eb81637354554fbb81fece15ab998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car: {fileID: 2734319183174814584, guid: 84f63d0ef891c804e954cae3be79a963, type: 3}
+--- !u!4 &1194984258
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194984256}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.6, y: 21.92, z: 0.01559565}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1232625521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77832,7 +78012,7 @@ Transform:
   m_GameObject: {fileID: 1685062311}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.26, y: -5.02, z: 0.01559565}
+  m_LocalPosition: {x: 10.11, y: -3.78, z: 0.01559565}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79268,6 +79448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coffee
       objectReference: {fileID: 0}
+    - target: {fileID: 3042821062959590904, guid: 0e24c2735b18e1245b3fdccfc5fffa9b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -79294,7 +79478,11 @@ SceneRoots:
   - {fileID: 650581400}
   - {fileID: 1960071720}
   - {fileID: 1126274633}
+  - {fileID: 108249763}
+  - {fileID: 827074519}
   - {fileID: 1685062313}
+  - {fileID: 1194984258}
+  - {fileID: 1153410824}
   - {fileID: 1297402029}
   - {fileID: 538922758}
   - {fileID: 1363617454}

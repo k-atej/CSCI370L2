@@ -104,8 +104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   car: {fileID: 2734319183174814584}
-  boundaryRight: 10
-  boundaryLeft: -11
+  boundaryRight: 28
+  boundaryLeft: -23
 --- !u!50 &8735560099769507632
 Rigidbody2D:
   serializedVersion: 5
@@ -125,10 +125,10 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 119
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
