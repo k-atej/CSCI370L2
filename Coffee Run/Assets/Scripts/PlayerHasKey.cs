@@ -7,6 +7,7 @@ public class PlayerHasKeys : MonoBehaviour
     public DialogueAsset shopDialogue;
 
     public GameObject ownerBody;
+    public GameObject ownerLight;
 
     public Inventory inventory;
 
@@ -31,6 +32,7 @@ public class PlayerHasKeys : MonoBehaviour
         }
         if(ownerInv.HasItem("Keys")){
             Destroy(ownerBody);
+            Destroy(ownerLight);
             shop.ChangeDialogue(shopDialogue);
             shop.repeatStartPosition = 0;
             GameManager.Instance.shopIsOpen = true;

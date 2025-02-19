@@ -19,7 +19,7 @@ public class LightUp : MonoBehaviour
      void OnTriggerEnter2D(Collider2D col)
     {
         //Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
-        light2D.intensity = 1.5f;
+        light2D.intensity = 1.6f;
     }
 
     void OnTriggerExit2D(Collider2D col)
