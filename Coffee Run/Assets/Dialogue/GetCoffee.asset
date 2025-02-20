@@ -15,4 +15,8 @@ MonoBehaviour:
   dialogue:
   - Press Q to pick up coffee.
   - In return for finding the keys, a worker gives you wayyyyyy too much coffee.
-  - "You should share it with everyone. \n\nPress R to give coffee to others. "
+  - "You should share it with everyone. \n"
+  - "Press R to give coffee to others. \n"
+  - 'Return home once everyone is caffeinated.
+
+'
