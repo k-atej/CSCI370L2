@@ -34,7 +34,10 @@ public class ShowInstructions : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D col)
     {
-        Instructions.canvasRenderer.SetAlpha(0);
+        if (Instructions != null) {
+            Instructions.canvasRenderer.SetAlpha(0);
+        }
+        
 
     }
 }
