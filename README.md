@@ -19,6 +19,13 @@ Struggles:
 It was a bit of a pain to coordinate all of the dialogue options with the various characters. We wanted the characters to say different things based on whether they were caffeinated or not, so we had to plan out ways to switch their dialogue assets. We also struggled slightly with collision detection and triggering interactions between the player and the environment. 
 
 Attributions:
+"Car1 Audio" https://opengameart.org/content/car-1-1
+
+"Pacman Copy Music" https://opengameart.org/content/pacman-clone-background-music
+
+"Drinking Coffee" https://pixabay.com/sound-effects/drinking-coffe-107121/
+
+"Coffee Sprite" https://opengameart.org/content/hot-coffee
 
 “RPG Urban Pack” Tile map, Kenney CC0.
 
